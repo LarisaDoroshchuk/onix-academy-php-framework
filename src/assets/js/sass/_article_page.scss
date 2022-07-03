@@ -1,0 +1,198 @@
+@import 'mixin';
+
+.home_page-slider {
+    min-height: 600px;
+    margin-bottom: 100px;
+    background: $color-very-dark-grayish-blue url(../img/article_background.png) center center/cover no-repeat;
+
+    &_conteiner {
+        max-width: 1310px;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+
+    .home_page-title {
+        margin: 0 auto;
+        display: block;
+        max-width: 530px;
+        text-align: center;
+        font: 700 36px/46px $font-lora;
+        color: $color-white;
+        z-index: 1;
+        padding-top: 277px;
+
+        @media (max-width: 767px) {
+                font: 700 30px/36px $font-lora;
+            }
+    }
+
+    .home_page-content{
+        margin: 0 auto;
+        max-width: 420px;
+        display: block;
+        font: 400 12px/20px $font-lora;
+        text-align: center;       
+        color: $color-hex-gray;
+        padding-top: 13px;
+        padding-bottom: 244px;
+    }
+
+}
+
+.home-page_conteiner{
+    max-width: 1280px;
+    margin: 0 15px 0 10px;
+}
+
+.home_page_post-wrapper{
+    max-width: 860px;
+    margin: 0 auto;
+
+    .post-text{
+        font: 400 14px/25px $font-lora;
+        color: $color-dark-grayish-blue;
+    }
+    
+    .post-text:nth-child(1) {
+       margin-bottom: 25px;
+    }
+
+    .post-text:nth-child(2) {
+       margin-bottom: 25px;
+    }
+
+    .post-text-accent{
+        font: 700 36px/46px $font-lora;
+        color: $color-slightly-desaturated-orange;
+        margin: 25px 0;
+
+        @media (max-width: 767px) {
+            font: 700 30px/36px $font-lora;
+        }
+    }
+
+    .post-date{
+        font: 700 12px/25px $font-lora;
+        color: $color-dark-grayish-blue;  
+        margin: 55px 0 42px;      
+    }
+
+    .post-info{
+        @include flex-items-center;
+        justify-content: space-between;
+        padding: 50px 0 100px;
+        border-top: 0.5px solid $color-light-gray;
+
+        .post-author{
+            @include flex-items-center;
+
+            .foto-author{
+                width: 50px;
+                height: 50px;
+                margin-right: 17px;
+            }
+
+            .info-autor-wrapper{
+                min-width: 133px;
+                display: flex;
+                flex-direction: column;
+
+                .info-autor{
+                    font: 700 12px/20px $font-lora;
+                    color: $color-dark-grayish-blue;
+                }
+
+                .info-autor_front-notBold{
+                    font: 400 12px/20px $font-lora;
+                    color: $color-dark-grayish-blue;                
+                }
+
+            }    
+            
+        }
+
+        .post-share-icons{
+
+
+            .post-icons-link{
+                text-decoration: none;
+                margin-left: 10px;
+            }
+
+            .post-icons{
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+
+}
+
+.block-posts_cloud-bg{
+    background: rgba(229, 229, 229, 0.3);
+    width: 100%;
+
+    .related-posts{
+        font: 700 18px/25px $font-lora;
+        color: $color-dark-grayish-blue;
+        padding: 100px 0 50px;
+    }
+
+    .posts-list{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(311px, auto));
+        margin-bottom: 100px;
+
+        .post-list_block{
+            min-width: 300px;
+            width: 100%;
+            @include box-sizing(border-box);
+            margin: 0 auto;
+            @include border-radius(5px);
+            // border-radius: 5px;
+            padding: 153px 0 42px 40px;
+
+            .data-post{
+                width: 100%;
+                font: 400 12px/15px $font-lora;
+                color: $color-hex-gray;
+                display: flex;
+                margin-bottom: 15px;                
+            }
+
+            .title-post{
+                font: 700 18px/25px $font-lora;
+                max-width: 260px;
+                max-height: 50px;
+                color: $color-white;
+                padding-right: 50px;
+                margin-bottom: 15px;
+                text-decoration: none;
+            }
+
+            .content-post{
+                font: 400 12px/20px $font-lora;
+                max-width: 340px;
+                width: 100%;
+                min-width: 260px;
+                color: $color-hex-gray;
+            }
+
+        }
+
+        .post-rectangle_1{
+            background: $color-very-dark-grayish-blue url(../img/related_blok/rectangle_1.png) center center/cover no-repeat;
+        }
+        .post-rectangle_2{
+            background: $color-very-dark-grayish-blue url(../img/related_blok/rectangle_2.png) center center/cover no-repeat;
+        }
+        .post-rectangle_3{
+            background: $color-very-dark-grayish-blue url(../img/related_blok/rectangle_3.png) center center/cover no-repeat;
+        }
+
+    }
+
+}

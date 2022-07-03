@@ -1,0 +1,260 @@
+.wrapper-home{
+    width: 100%;
+    margin: 0 auto;
+    background: $color-light-grayish-blue;
+
+
+    .nav-article-home{
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .home-slider{
+        min-height: 600px;
+        margin-bottom: 100px;
+        
+   
+        &_conteiner{
+            position: relative;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .home-title{
+            position: absolute;
+            max-width: 530px;
+            font: 700 36px/46px $font-lora;
+            color: $color-white;
+            top: 253px;
+            left: 70px;
+            z-index: 1;
+
+            @media (max-width: 767px) {
+                font: 700 30px/36px $font-lora;
+            }
+        }
+
+    }
+
+    .slider_1{
+        background: $color-very-dark-grayish-blue url(../img/slider.png) center center/cover no-repeat;
+    }
+
+    .slider_2{
+        background: $color-very-dark-grayish-blue url(../img/article_background.png) center center/cover no-repeat;
+    }
+
+    .slider_3{
+        background: $color-very-dark-grayish-blue url(../img/richird-section-img.png) center center/cover no-repeat;
+    }
+
+
+    .home_conteiner{
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+
+        .header-news{
+            @include flex-items-center;
+            justify-content: space-between;
+
+
+            .title-news{
+                color: $color-dark-grayish-blue;
+                font: 700 36px/46px $font-lora;
+                margin-bottom: 38px;
+
+                @media (max-width: 767px) {
+                        font: 700 25px/36px $font-lora;
+                }
+            }
+
+            .link-all-news{
+                color: $color-dark-grayish-blue;
+                font: 700 12px/25px $font-lora;
+                text-align: right;
+                text-decoration: none;
+            }
+
+        }
+
+        .news-list{
+            display: grid;
+            grid-gap: 50px 20px;
+            grid-template-columns: repeat(auto-fill, minmax(310px, auto));
+            margin-bottom: 100px;
+
+            .block-news{
+                min-width: 310px;
+                box-sizing: border-box;
+                margin: 0 auto;
+            
+
+                .img-news{
+                    width: 100%;
+                    height: 65%;
+                    min-width: 310px;
+                    min-height: 280px;
+                    display: block;
+                    @include box-sizing(border-box);
+                    @include border-radius(5px);
+                }
+
+                .data-news{
+                    color: $color-dark-grayish-blues;
+                    font: 400 12px/15px $font-lora;
+                    margin: 15px 0;
+                }
+
+                .title-news{
+                    text-decoration: none;
+                    color: $color-dark-grayish-blue;
+                    font: 700 19px/25px $font-lora;
+                }
+
+                .content-news{
+                    margin-top: 15px;
+                    font: 400 12px/20px $font-lora;
+                    color: $color-dark-grayish-blues;
+                }
+            }
+        }
+    
+    }
+
+  
+    .big-post-home{
+        background: $color-very-dark-grayish-blue url(../img/richird-section-img.png) center center/cover no-repeat;
+
+        @include flex-items-center;
+        flex-direction: column;
+        justify-content: center;
+   
+        .big-post_title{
+            font: 700 36px/46px $font-lora;    
+            color: $color-white;
+            max-width: 530px;
+            text-align: center;
+            margin-top: 224px;
+
+            @media (max-width: 767px) {
+                    font: 700 30px/36px $font-lora;
+            }
+        }
+
+        .big-post_content{
+            max-width: 420px;
+            font: 400 12px/20px $font-lora; 
+            text-align: center;
+            color: $color-hex-gray;
+            margin: 13px 0 231px 0;
+        }
+
+    }
+
+
+    .home-footer_wrapper{
+        background: $color-mostly-black;
+
+
+        .home_conteiner{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .contacts{
+            margin-top: 106px;
+            max-width: 330px;
+
+            @media (max-width: 1225px) {
+                margin-top: 50px;
+            }
+
+            .contacts-title{
+                color: $color-white;
+                font: 700 18px/25px $font-lora;
+                margin-bottom: 16px;
+            }
+
+            .contacts-text{
+                display: block;
+                text-decoration: none;
+                margin-bottom: 18px;
+                color: $color-hex-gray;
+                font: 400 12px/15px $font-lora;
+            }
+
+        }
+
+        .contacts-adress{
+            width: 114px;
+        }
+
+        .home-footer_conteiner{
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(294px, auto));
+        }
+
+        .contact-wrapper{
+            @include flex-items-center;
+            justify-content: row;
+        }
+
+        .social-link{
+            text-decoration: none;
+            display: block;
+            margin-left: 18px;
+        }
+
+        .social-link:first-child{
+            margin-left: 0px;
+        }
+
+
+        .social-icons{
+            width: 20px;
+            height: 20px;
+        }
+
+    }    
+
+
+
+    .sb-footer_conteiner{
+        background: $color-very-dark-grayish-blue;
+        margin-top: 88px;
+
+        @media (max-width: 1225px) {
+            margin-top: 68px;
+        }
+
+
+        .sb-wrapper{
+            @include flex-items-center;
+            justify-content: space-between;
+            max-width: 1300px;
+            margin: 0 auto; 
+            padding: 0 10px;
+
+            .sb-footer_conteiner{
+                color: $color-hex-gray;
+                font: 700 14px/18px $font-lora;
+                margin: 31px 0px;
+
+            }
+
+            .sb-footer_text{
+                font: 400 14px/18px $font-lora;
+                color: $color-hex-gray;
+            }
+        }
+
+    }
+}

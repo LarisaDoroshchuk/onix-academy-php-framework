@@ -1,0 +1,232 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+
+
+    .wrapper-img{
+        @include box-sizing(border-box);
+        position: relative;
+        width: 50vw;
+            
+        &::before{
+            content: url(https://onix.kr.ua/wp-content/themes/onix-ua/assets/img/logo.svg) center center/cover no-repeat;
+            position: absolute;
+            z-index: 2;
+            width: 117px;
+            height: 30px;
+            top: 12%;
+            left: 25%;
+
+            @media (max-width: 767px) {   
+                    visibility: hidden;
+            };
+            @media (max-width: 565px) { 
+                    visibility: hidden;
+            };
+        }
+
+        @media (max-width: 767px) {
+                display: none;
+        };
+        @media (max-width: 565px) {
+                display: none;
+        };
+    }
+
+    .wraper-form{
+        margin: 0 auto;
+        @include box-sizing(border-box);
+        max-width: 720px;
+        width: 100%;
+        max-height: 900px;
+        height: 100%;
+        padding: 97px 140px;
+        background: $color-white;
+
+        @media (max-width: 1200px) {
+                padding: 97px 26px;
+        }
+        @media (min-width: 767px) {
+                width: 50%;
+        }
+        @media (max-width: 767px) {
+                padding: 120px 10px;
+        }
+    
+
+        .conteiner-form{
+            margin: 0 auto;
+        
+
+            .title-form {
+                font: 700 40px/44px $font-league-spartan;
+                color: $color-mostly-black;
+                margin-bottom: 110px;
+
+                @media (max-width: 767px) {
+                        margin-bottom: 80px;
+                }
+
+                @media (max-width: 565px) {
+                        font: 700 40px/44px $font-league-spartan;
+                        margin-bottom: 60px;
+                }
+            }
+
+            .title-login{
+                font: 700 36px/46px $font-lora;
+                width: 100%; 
+                max-width: 377px;
+                color: $color-mostly-black;
+                margin-bottom: 29px;
+                @media (max-width: 1300px) {
+                        font: 700 29px/35px $font-lora;
+                }
+                @media (max-width: 1200px) {
+                        font: 700 29px/35px $font-lora;
+                        font-style: normal;
+                }
+                @media (max-width: 565px) {
+                    font: 700 29px/35px $font-lora;
+                    font-style: normal;
+                }
+
+            }
+
+            .conteiner-form{
+                width: 100%; 
+                max-width: 440px;
+                @include box-sizing(border-box);
+          
+
+                .form-group{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 25px;
+                
+
+                    .view-label{
+                        font: 400 14px/20px $font-lora;
+                        color: $color-mostly-black;
+                        margin-bottom: 10px;
+                    }
+
+                    .view-input{
+                        max-width: 420px;
+                        padding: 0 10px;
+                        height: 48px;
+                        background: $color-white;
+                        border: 1px solid $color-hex-gray;
+                        @include border-radius(5px);
+                        
+                        &:focus{
+                            background: $color-white;
+                            border: 1px solid $color-strong-red;
+                            @include border-radius(5px);
+                            @include transition(1s);
+                        }
+                    }
+
+                }
+
+                .help-password{
+                    @include flex-items-center;
+                    justify-content: space-between;
+                    margin-bottom: 24px;
+
+                    .conteiner-checkbox{
+                        @include flex-items-center;
+                    
+
+                        .checkbox-form-input{
+                            width: 20px;
+                            height: 20px;
+                            background: $color-white;
+                            border: 1px solid $color-dark-grayish-blues;
+                            @include border-radius(3px);
+                            margin-right: 18px;
+                        }
+
+
+                        .checkbox-form-label{
+                            max-width: 108px;
+                            width: 100%;
+                            height: 24px;
+                            font: 400 16px/24px $font-lora;
+                            color: $color-black;
+                        }
+
+                    }
+
+                    .forgot-password{
+                        text-decoration: none;
+                        max-width: 132px;
+                        width: 100%;
+                        height: 24px;
+                        font: 400 16px/24px $font-lora;
+                        color: $color-slightly-desaturated-orange;
+                        @include transition(1s);
+                        
+                        &:hover{
+                            color: $color-orange;
+                        }
+                    }
+                }
+
+                .btn-all {
+                    max-width: 440px;
+                    width: 100%;
+                    height: 48px;
+                    border-radius: 5px;
+                    border: 0;
+                    margin-bottom: 20px;
+                }
+
+                .btn-login{
+                    background: $color-slightly-desaturated-orange;
+                    font: 700 16px/20px $font-lora;
+                    color: $color-white;
+                    @include transition(1s);
+
+                    &:hover{
+                        color: $color-very-dark-grayish-blue;
+                    }
+                }
+
+                .btn-sign{
+                    background: $color-very-dark-grayish-blue;
+                    font: 700 16px/20px $font-lora;
+                    color: $color-white;
+                    @include transition(1s);
+
+                    &:hover{
+                        color: $color-slightly-desaturated-orange;
+                    }
+                }
+
+                .form-content{
+                    font: 400 16px/24px $font-lora;
+                    color: $color-black;
+                    margin: 10px 10px 0 0;
+
+                    .form-register{
+                        font: 400 16px/24px $font-lora;
+                        color: $color-slightly-desaturated-orange;
+                        text-decoration: none;
+                        @include transition(1s);
+
+                        &:hover{
+                            color: $color-orange;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}

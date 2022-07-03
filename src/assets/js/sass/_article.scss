@@ -1,0 +1,188 @@
+.wrapper-article{
+    // font-family: $font-roboto;
+    width: margin 0 auto;
+    position: relative;
+    width: 100%;
+
+    .article-main_conteiner{
+        padding: 24px 40px 53px; 
+
+        .article-main_conteiner{
+            margin-top: 80px;
+            background: $color-white;
+        }
+
+        .article-main_link-home{
+            font: 400 14px/16px $font-roboto;
+            color: $color-slightly-desaturated-orange;
+            text-decoration: none;
+            margin-bottom: 10px;
+            @include transition(1s);
+            margin-top: 104px;
+
+            &:hover{
+                color: $color-orange;
+            }
+        }
+
+        .article-main_title{
+            font: 700 24px/28px $font-roboto;
+            color: $color-mostly-black;
+            margin-bottom: 50px;
+        }
+
+        
+        .article-main_wrapper-home{
+            @include flex-items-center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            @media (max-width: 565px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+            .article-main_search{
+                @include box-sizing(border-box);
+                max-width: 307px;
+                width: 100%;
+                height: 40px;
+                background: $color-white;
+                border: 1px solid $color-hex-gray;
+                @include border-radius(5px);
+                padding-left: 15px;
+                @include flex-items-center; 
+            
+
+                .article_icon-search{
+                    margin-right: 10px;
+                }
+
+                .article_search-input{
+                    border: 0px solid;
+                    width: 250px;
+
+                    &:focus{
+                        color: $color-orange;
+                        @include transition(1s);
+                    }
+                }
+
+            }    
+
+            .article-main_link-add{
+                padding: 10px 15px;
+                background: $color-slightly-desaturated-orange;
+                @include border-radius(5px);
+                font: 400 16px/20px $font-roboto;
+                color: $color-white;
+                text-decoration: none;
+                @include transition(1s);
+
+                @media (max-width: 565px) {  
+                            display: inline-block;
+                            margin-top: 20px;
+                };
+                
+                &:hover{
+                    color: $color-very-dark-grayish-blue;
+                }
+            }
+
+        }
+
+
+        .wrapper-table{
+            overflow-x: auto;
+        
+
+            table {
+                width: 100%;
+                @include box-sizing(border-box);
+                font-family: 'Roboto';
+                font-style: normal;
+                
+            }
+            
+            td, th {
+                text-align: left;
+                padding: 0 10px;
+                vertical-align: middle;
+            }
+
+            tr{
+                background: $color-white;
+                border-bottom: 1px solid $color-hex-gray;
+                height: 80px;
+            }
+
+            thead tr:first-child {
+                    height: 35px;   
+            }
+
+            .card-input{
+                width: 19px;
+                height: 19px;
+            }
+
+            .article-table_th-list{
+                padding: 20px 0px;
+            }
+
+            .article-table_th-text{
+                font: 400 12px/20px $font-roboto;
+                text-transform: uppercase;
+                color: $color-dark-grayish-blues;
+                text-align: center;
+            }
+
+            .article_img{
+                width: 48px;
+                height: 40px;
+            }
+
+            .article_content{
+                font: 500 16px/24px $font-roboto;
+                color: $color-dark-grayish-blue;
+            }
+
+            .article_name{
+                font: 400 16px/24px $font-roboto;
+                color: $color-dark-grayish-blue;
+            }
+
+            .article_date{
+                font: 400 16px/24px $font-roboto;
+                color: $color-dark-grayish-blue;
+            }
+
+            .article_un-published{
+                font: 400 16px/24px $font-roboto;
+                color: $color-dark-grayish-blue;
+            }
+
+            .article_correct-svg{
+                padding-right: 20px;
+
+                @media (max-width: 932px) {
+                    padding-right: 0;    
+                };
+            }
+
+            .article_svg-hover:hover, .article_icon-search:hover{
+                fill:  rgba(234, 196, 148, 0.5);
+            }
+
+            @media (max-width: 932px) {
+                .article_svg {
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+    }
+
+}
+
