@@ -3,11 +3,13 @@
 namespace App\Controllers;
 
 use App\View\Template;
+use App\Models\News;
 
 class HomeController
 {
     public function index(): Template
     {
-        return new Template('home', []);
+        $news = News::all();
+        return new Template('home', ['listNews' => array_slice($news, 0, 8)]);
     }
 }

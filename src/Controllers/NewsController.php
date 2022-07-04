@@ -10,12 +10,12 @@ class NewsController
     public function list(): Template
     {
         $news = News::all();
-        return new Template('list_news', ['news' => $news]);
+        return new Template('list_news', ['listNews' => $news]);
     }
 
     public function view(int $id): Template
     {
         $news = News::find($id);
-        return new Template('news', ['news' => $news[0]]);
+        return count($news) == 0 ? new Template('error', []) : new Template('news', ['news' => $news[0]]);
     }
 }

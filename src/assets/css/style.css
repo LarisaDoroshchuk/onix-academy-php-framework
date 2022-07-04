@@ -1439,5 +1439,9 @@ textarea {
 .block-posts_cloud-bg .posts-list .post-rectangle_3 {
   background: #343A40 url(/img/related_blok/rectangle_3.png) center center/cover no-repeat;
 }
+.error-message{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  font: 700 35px/45px "Lora", serif;
 
-/*# sourceMappingURL=style.css.map */
+}
