@@ -30,10 +30,6 @@ class Route
                 return null;
             }
         }
-        // echo '<pre>';
-        // var_dump($this->controller);
-        // var_dump($parametrs);
-
         return new MatchedRoute(
             $this->controller,
             $this->action,

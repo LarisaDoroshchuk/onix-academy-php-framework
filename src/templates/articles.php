@@ -25,12 +25,12 @@
             <nav class="nav-article">
 
                 <div class="nav-article_wrapper-logo">
-                    <a href="./home.html" class="nav-article_logo">RUNO</a>
+                    <a href="/" class="nav-article_logo">RUNO</a>
                 </div>
 
                 <ul class="nav-article_wrapper-list">
                     <li class="nav-article_wrapper-item">
-                        <a href="./news_all.html" class="nav-article_item">Articles</a>
+                        <a href="./news" class="nav-article_item">Articles</a>
                     </li>
                     <li class="nav-article_wrapper-item">
                         <a href="" class="nav-article_item">Logout</a>
@@ -44,7 +44,7 @@
         <main class="article-main_conteiner">
 
             <div class="article-main_wrapper-home">
-                <a href="./home.html" class="article-main_link-home">Home</a>
+                <a href="/" class="article-main_link-home">Home</a>
             </div>
 
             <h3 class="article-main_title">Article List</h3>

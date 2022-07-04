@@ -3,17 +3,19 @@
 namespace App\Controllers;
 
 use App\View\Template;
+use App\Models\News;
 
 class NewsController
 {
     public function list(): Template
     {
-        return new Template('list_news', []);
+        $news = News::all();
+        return new Template('list_news', ['news' => $news]);
     }
 
     public function view(int $id): Template
     {
-        return new Template('news', ['id' => $id]);
-        // return 'news';
+        $news = News::find($id);
+        return new Template('news', ['news' => $news[0]]);
     }
 }

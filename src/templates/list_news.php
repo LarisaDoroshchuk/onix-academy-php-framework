@@ -60,7 +60,7 @@
 
                         <img src="./img/image_1.png" alt="image_1" class="img-news">
                         <p class="data-news">08.08.2021</p>
-                        <a href="#" class="title-news">Dream destinations to visit this
+                        <a href="/news/1" class="title-news">Dream destinations to visit this
                             year in Paris</a>
                         <p class="content-news">Progressively incentivize cooperative systems through
                             technically sound functionalities. Credibly productivate
